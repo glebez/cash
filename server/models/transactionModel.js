@@ -14,7 +14,7 @@ var transactionModel = new Schema({
 	description: String,
 	category: {
 		type: String,
-		default: 'n/a',
+		default: 'none',
 		validate: {
 			validator: categoriesValidator,
 			message: '{VALUE} is not set as a category.'
