@@ -4,13 +4,17 @@ import TransactionCard from './transactionCard';
 
 let TransactionsList = (props) => {
 	const transactions = props.transactions || [];
-  return (<div>
+  return (
+		<div className='row'>
     {transactions.map(transaction =>
-      <TransactionCard
-        {...transaction}
-      />
+      <div className='col-xs-6 col-sm-3'>
+				<TransactionCard
+	      	  {...transaction}
+	      />
+			</div>
     )}
-  </div>)
+  	</div>
+	);
 }
 
 // TodoList.propTypes = {

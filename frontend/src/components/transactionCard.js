@@ -1,11 +1,14 @@
 import React, { PropTypes } from 'react';
 
 const TransactionCard = ({ sum, description, category }) => (
-	<div>
-		<h1>Transaction</h1>
-		<h2>{sum}</h2>
-		<p>{category}</p>
-		<p>{description}</p>
+	<div className='transaction-card'>
+		<div className='transaction-card__top'>
+			<h1 className='transaction-card__title'>{sum}</h1>
+		</div>
+		<div className='transaction-card__bottom'>
+			<h2 className='transaction-card__category'>{category}</h2>
+			<p className='transaction-card__description'>{description}</p>
+		</div>
 	</div>
 );
 

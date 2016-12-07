@@ -1,4 +1,32 @@
+
 .new-trans-form {
 	margin: 50px auto 0;
 	max-width: 500px;
+}
+
+.transaction-card {
+	margin-bottom: 15px;
+	border: 1px solid #cfcfcf;
+	border-radius: 5px;
+	overflow: hidden;
+
+	&__top {
+		padding-top: 20px;
+		padding-left: 15px;
+		padding-right: 15px;
+		padding-bottom: 10px;
+		background-color: #180c3d;
+	}
+
+	&__bottom {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	&__title {
+		margin-top: 0;
+		color: #d8a50b;
+		font-family: 'Oswald', sans-serif;
+		font-weight: bold;
+	}
 }
